@@ -18,7 +18,33 @@
 //  Number of Pages
 //  Description
 
-// 2.In terms of the properties of books that you thought of, represent the following books as data:
+// 2.In terms of the properties of books that you thought of, represent the following books as data: 
+
+var book1= {
+	title: "Harry Potter and the Sorcerer's Stone",
+	author: "J.K. Rowling",
+	price: "25$",
+	genre: "fiction",
+	numberOfPages: 308,
+	description: "Harry, Ron, and Hermione deduce that the treasure under the trapdoor is the Philosopher's Stone, which can transform metal into gold and can also confer immortality"
+}
+var book2 = {
+	title: " Romeo and Juliet ",
+    author: "William Shakespeare",
+    price: "9$",
+    genre: "Shakespearean tragedy",
+    numberOfPages: 480,
+    description: "Romeo and Juliet is a tragedy about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. "
+
+}
+var book3 = {
+	title: " Structure and Interpretation of Computer Programs ",
+    author: "Gerald Jay Sussman, Hal Abelson",
+    price: "11$",
+    genre: " computer science",
+    numberOfPages: 657,
+    description: "It teaches fundamental principles of computer programming, including recursion, abstraction, modularity, and programming language design and implementation."
+}
 
 //  Harry Potter and the Sorcerer's Stone (J.K. Rowling)
 //  Romeo and Juliet (William Shakespeare)
@@ -27,6 +53,18 @@
 //  Three other books (see this list for ideas)
 
 // 3.You may have been rewriting the same type of object over and over. We need to stay DRY (Do Not Repeat). Write a function makeBook that takes as arguments different attributes of a book and returns an object representing that book that has the proper structure (we call this a factory function).
+
+function makeBook(title, author, price, genre, numberOfPages, description ){
+	return {
+		title: title,
+    author: author,
+    price: price,
+    genre: genre,
+    numberOfPages: numberOfPages,
+    description: description
+
+	};
+}
 
 // 4.Look at one of your book objects in the console. This is the object inspector. The object inspector is nice to have, but it will be easier to have a function to display the more important information easily. Write a function called displayBook that takes a book as an argument, and returns the important information in a more readable way, for example:
 
@@ -37,6 +75,10 @@
 //  displayBook(sorcerersStone);
 //  // => 'Harry Potter and the Sorcerer's Stone, by J.K. Rowling -- fantasy, $24.99'
 // The output string above is only an example. What information is most important to you? How can you make that information easier to read for people?
+
+function displayBook(book){
+	return book.title + ' ' + book.genre + ' ' + book.description;
+}
 
 // 5.Create an array called books that holds all of the books that you created above.
 
