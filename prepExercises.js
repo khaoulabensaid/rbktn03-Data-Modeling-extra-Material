@@ -81,9 +81,39 @@ function displayBook(book){
 }
 
 // 5.Create an array called books that holds all of the books that you created above.
+var books =[
+  {
+	title: "Harry Potter and the Sorcerer's Stone",
+	author: "J.K. Rowling",
+	price: "25$",
+	genre: "fiction",
+	numberOfPages: 308,
+	description: "Harry, Ron, and Hermione deduce that the treasure under the trapdoor is the Philosopher's Stone, which can transform metal into gold and can also confer immortality"
+}, 
+  {
+	title: " Romeo and Juliet ",
+    author: "William Shakespeare",
+    price: "9$",
+    genre: "Shakespearean tragedy",
+    numberOfPages: 480,
+    description: "Romeo and Juliet is a tragedy about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. "
+
+},
+  {
+	title: " Structure and Interpretation of Computer Programs ",
+    author: "Gerald Jay Sussman, Hal Abelson",
+    price: "11$",
+    genre: " computer science",
+    numberOfPages: 657,
+    description: "It teaches fundamental principles of computer programming, including recursion, abstraction, modularity, and programming language design and implementation."
+}
+
+]
 
 // 6.Your function displayBook can be used to display a single book as a string. Now, write a function displayBooks that, given an array of books, returns a single string consisting of all of the books. Use the function displayBook to format all of the books. Each book should be numbered and separated with a newline (we also call this a line break) character so that each book is shown on a separate line in the console. The newline character is specified with a special escaped character in a string:
+   
 
+   
 //  // Enter the below line into a console 'Hello /n World!'; // the 'backslash n' character is a newline
 //  function displayBooks(books) {
 //        // ...
